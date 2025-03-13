@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SS_Loc_Testing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1119.2,5160.8" sap2010:WorkflowViewState.IdRef="SS_Loc_Testing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SS_Loc_Testing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1112.8,4140" sap2010:WorkflowViewState.IdRef="SS_Loc_Testing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugase="clr-namespace:UiPath.GSuite.Activities.Sheets.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -126,15 +126,19 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable4</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable2</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable3</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SS_Loc_Testing" sap:VirtualizedContainerService.HintSize="1129.6,5096" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SS_Loc_Testing" sap:VirtualizedContainerService.HintSize="924.8,4075.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Flat" sap:VirtualizedContainerService.HintSize="1067.2,5007.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Flat" sap:VirtualizedContainerService.HintSize="862.4,3986.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="statusi" />
         <Variable x:TypeArguments="x:String" Name="svWertilebi" />
@@ -229,7 +233,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Get Ready Maintenance" sap:VirtualizedContainerService.HintSize="1004.8,608" sap2010:WorkflowViewState.IdRef="Sequence_35">
+      <Sequence DisplayName="Get Ready Maintenance" sap:VirtualizedContainerService.HintSize="800,608" sap2010:WorkflowViewState.IdRef="Sequence_35">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -258,7 +262,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </Assign>
-        <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Column1&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Column2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column3&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column4&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column5&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column6&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column7&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column8&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column9&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column10&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column11&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column12&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Column13&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;იმეილი_x0020__x002F__x0020_ნომერი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;Column1&gt;ლინკი&lt;/Column1&gt;&#xA;    &lt;Column2&gt;კომენტარი&lt;/Column2&gt;&#xA;    &lt;Column3&gt;ფასი $&lt;/Column3&gt;&#xA;    &lt;Column4&gt;MyHome ID&lt;/Column4&gt;&#xA;    &lt;Column5&gt;SS ID&lt;/Column5&gt;&#xA;    &lt;Column6&gt;ტელეფონი&lt;/Column6&gt;&#xA;    &lt;Column7&gt;მისამართი&lt;/Column7&gt;&#xA;    &lt;Column8&gt;ოთახები&lt;/Column8&gt;&#xA;    &lt;Column9&gt;სართული&lt;/Column9&gt;&#xA;    &lt;Column10&gt;ფართი&lt;/Column10&gt;&#xA;    &lt;Column11&gt;თარიღი&lt;/Column11&gt;&#xA;    &lt;Column12&gt;რაიონი&lt;/Column12&gt;&#xA;    &lt;Column13&gt;გამონაკლისები&lt;/Column13&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;">
+        <ui:BuildDataTable DataTable="[ExtractDataTable]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ლინკი&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;კომენტარი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ფასი_x0020__x0024_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;MyHome_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;SS_x0020_ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ტელეფონი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;მისამართი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ოთახები&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;სართული&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ფართი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;თარიღი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;რაიონი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;გამონაკლისები&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;იმეილი_x0020__x002F__x0020_ნომერი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -266,7 +270,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:BuildDataTable>
-        <ui:BuildDataTable DataTable="[dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;_x0031_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+        <ui:BuildDataTable DataTable="[dt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ლინკი&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -309,15 +313,16 @@
           </If.Else>
         </If>
       </Sequence>
-      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="While" sap:VirtualizedContainerService.HintSize="1004.8,4287.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="True" DisplayName="While" sap:VirtualizedContainerService.HintSize="800,3266.4" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
         <ui:InterruptibleWhile.Body>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="971.2,4149.6" sap2010:WorkflowViewState.IdRef="Sequence_1277">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="766.4,3128.8" sap2010:WorkflowViewState.IdRef="Sequence_1277">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="908.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <ui:ClearDataTable DataTable="[ExtractDataTable]" DisplayName="Clear Data Table" sap:VirtualizedContainerService.HintSize="704,112.8" sap2010:WorkflowViewState.IdRef="ClearDataTable_1" />
+            <Assign sap:VirtualizedContainerService.HintSize="704,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[SheetIndex]</OutArgument>
               </Assign.To>
@@ -325,7 +330,7 @@
                 <InArgument x:TypeArguments="x:Int32">[(SheetIndex Mod 2) + 1]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="908.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign sap:VirtualizedContainerService.HintSize="704,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[SheetName]</OutArgument>
               </Assign.To>
@@ -333,7 +338,7 @@
                 <InArgument x:TypeArguments="x:String">[SheetName.Substring(0, SheetName.Length - 1)+SheetIndex.ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Untitled spreadsheet" BrowserItemId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" ConnectionId="a6a1e84c-2d5d-41d8-b846-ff372ccb2674" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="908.8,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="[SheetName]" ReadAs="Values" Result="[Links]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+            <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ColumnNames="{x:Array Type=x:String}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Untitled spreadsheet" BrowserItemId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" ConnectionId="a6a1e84c-2d5d-41d8-b846-ff372ccb2674" DisplayName="Read Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="704,289.6" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="[SheetName]" ReadAs="Values" Result="[Links]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
               <uga:ReadRangeConnections.FileIdBackup>
                 <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                   <usau:BackupSlot.BackupValues>
@@ -348,216 +353,53 @@
                 <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
               </uga:ReadRangeConnections.RangeMetadata>
             </uga:ReadRangeConnections>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[Links]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="908.8,3544" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[Links]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="704,2410.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd1:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="LinksCurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="875.2,3355.2" sap2010:WorkflowViewState.IdRef="Sequence_1276">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="670.4,2221.6" sap2010:WorkflowViewState.IdRef="Sequence_1276">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:IfElseIfV2 Condition="[Not String.IsNullOrWhiteSpace(LinksCurrentRow.Item(5).ToString)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="812.8,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
-                      <ui:IfElseIfV2.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_43">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </Sequence>
-                      </ui:IfElseIfV2.Else>
-                      <ui:IfElseIfV2.ElseIfs>
-                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[String.IsNullOrWhiteSpace(LinksCurrentRow.Item(2).ToString)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
-                            <ui:IfElseIfBlock.Then>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,862.4" sap2010:WorkflowViewState.IdRef="Sequence_39">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="Write to SpreadSheet" sap:VirtualizedContainerService.HintSize="449.6,725.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[LinksCurrentRow.ItemArray]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,220" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:AddDataRow>
-                                  <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Untitled spreadsheet" BrowserItemId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" ConnectionId="a6a1e84c-2d5d-41d8-b846-ff372ccb2674" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,384.8" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_2" IncludeHeaders="False" ItemSelectionMode="Browse" Range="[SheetName]" RowPosition="0" Source="[ExtractDataTable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
-                                    <uga:WriteRangeConnections.FileIdBackup>
-                                      <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="Browse">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </uga:WriteRangeConnections.FileIdBackup>
-                                    <uga:WriteRangeConnections.Item>
-                                      <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID2}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" FriendlyName="Untitled spreadsheet" FullPathHint="My Drive/Untitled spreadsheet" InputMode="Browse" />
-                                    </uga:WriteRangeConnections.Item>
-                                    <uga:WriteRangeConnections.RangeWriteModeBackup>
-                                      <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </uga:WriteRangeConnections.RangeWriteModeBackup>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </uga:WriteRangeConnections>
-                                </Sequence>
-                                <ui:Continue sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Continue_2" />
-                              </Sequence>
-                            </ui:IfElseIfBlock.Then>
-                          </ui:IfElseIfBlock>
-                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[LinksCurrentRow.Item(3).ToString=&quot;განცხადება წაშლილი ან არააქტიურია&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
-                            <ui:IfElseIfBlock.Then>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,862.4" sap2010:WorkflowViewState.IdRef="Sequence_41">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="Write to SpreadSheet" sap:VirtualizedContainerService.HintSize="449.6,725.6" sap2010:WorkflowViewState.IdRef="Sequence_40">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[LinksCurrentRow.ItemArray]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,220" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </ui:AddDataRow>
-                                  <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Untitled spreadsheet" BrowserItemId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" ConnectionId="a6a1e84c-2d5d-41d8-b846-ff372ccb2674" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,384.8" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_3" IncludeHeaders="False" ItemSelectionMode="Browse" Range="[SheetName]" RowPosition="0" Source="[ExtractDataTable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
-                                    <uga:WriteRangeConnections.FileIdBackup>
-                                      <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="Browse">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </uga:WriteRangeConnections.FileIdBackup>
-                                    <uga:WriteRangeConnections.Item>
-                                      <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID3}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" FriendlyName="Untitled spreadsheet" FullPathHint="My Drive/Untitled spreadsheet" InputMode="Browse" />
-                                    </uga:WriteRangeConnections.Item>
-                                    <uga:WriteRangeConnections.RangeWriteModeBackup>
-                                      <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
-                                        <usau:BackupSlot.BackupValues>
-                                          <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
-                                        </usau:BackupSlot.BackupValues>
-                                      </usau:BackupSlot>
-                                    </uga:WriteRangeConnections.RangeWriteModeBackup>
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </uga:WriteRangeConnections>
-                                </Sequence>
-                                <ui:Continue sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Continue_3" />
-                              </Sequence>
-                            </ui:IfElseIfBlock.Then>
-                          </ui:IfElseIfBlock>
-                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[String.IsNullOrWhiteSpace(LinksCurrentRow.Item(0).ToString)]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
-                            <ui:IfElseIfBlock.Then>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,136.8" sap2010:WorkflowViewState.IdRef="Sequence_42">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_4" />
-                              </Sequence>
-                            </ui:IfElseIfBlock.Then>
-                          </ui:IfElseIfBlock>
-                        </sc:BindingList>
-                      </ui:IfElseIfV2.ElseIfs>
+                    <If Condition="[Not String.IsNullOrWhiteSpace(LinksCurrentRow.Item(1).ToString)]" sap:VirtualizedContainerService.HintSize="608,84.8" sap2010:WorkflowViewState.IdRef="If_73">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:IfElseIfV2.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,862.4" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136.8" sap2010:WorkflowViewState.IdRef="Sequence_1279">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Write to SpreadSheet" sap:VirtualizedContainerService.HintSize="449.6,725.6" sap2010:WorkflowViewState.IdRef="Sequence_36">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[LinksCurrentRow.ItemArray]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,220" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </ui:AddDataRow>
-                            <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Untitled spreadsheet" BrowserItemId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" ConnectionId="a6a1e84c-2d5d-41d8-b846-ff372ccb2674" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,384.8" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="Browse" Range="[SheetName]" RowPosition="0" Source="[ExtractDataTable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
-                              <uga:WriteRangeConnections.FileIdBackup>
-                                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
-                                  <usau:BackupSlot.BackupValues>
-                                    <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-                                  </usau:BackupSlot.BackupValues>
-                                </usau:BackupSlot>
-                              </uga:WriteRangeConnections.FileIdBackup>
-                              <uga:WriteRangeConnections.Item>
-                                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" FriendlyName="Untitled spreadsheet" FullPathHint="My Drive/Untitled spreadsheet" InputMode="Browse" />
-                              </uga:WriteRangeConnections.Item>
-                              <uga:WriteRangeConnections.RangeWriteModeBackup>
-                                <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
-                                  <usau:BackupSlot.BackupValues>
-                                    <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
-                                  </usau:BackupSlot.BackupValues>
-                                </usau:BackupSlot>
-                              </uga:WriteRangeConnections.RangeWriteModeBackup>
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </uga:WriteRangeConnections>
-                          </Sequence>
-                          <ui:Continue sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                          <ui:Continue sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Continue_5" />
                         </Sequence>
-                      </ui:IfElseIfV2.Then>
-                    </ui:IfElseIfV2>
-                    <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="812.8,3181.6" sap2010:WorkflowViewState.IdRef="Sequence_1275">
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_1280">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="608,2048" sap2010:WorkflowViewState.IdRef="Sequence_1275">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Cvladebi" sap:VirtualizedContainerService.HintSize="750.4,115.2" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                      <Sequence DisplayName="Cvladebi" sap:VirtualizedContainerService.HintSize="545.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_44">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1037,7 +879,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:MultipleAssign>
                       </Sequence>
-                      <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Browser Chrome" sap:VirtualizedContainerService.HintSize="750.4,696.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V2" WindowResize="Maximize">
+                      <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Always" DisplayName="Use Browser Chrome" sap:VirtualizedContainerService.HintSize="545.6,656.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="Always" ScopeGuid="28c7bf54-feb7-4b70-94b0-b879708d00b1" Version="V2" WindowResize="Maximize">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
@@ -1083,29 +925,29 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NApplicationCard>
-                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="750.4,2257.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="545.6,447.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="716.8,1977.6" sap2010:WorkflowViewState.IdRef="Sequence_397">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,198.4" sap2010:WorkflowViewState.IdRef="Sequence_397">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Location" sap:VirtualizedContainerService.HintSize="1110.4,2894.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <Sequence DisplayName="Location" sap:VirtualizedContainerService.HintSize="449.6,108" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="LocationCheck" />
                                 </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <If Condition="[Title.Contains(&quot;წვერ&quot;) = true OR Title.Contains(&quot;ახალდაბ&quot;) = true OR Title.Contains(&quot;ბეთანია&quot;) = true OR Title.Contains(&quot;კაკლებ&quot;) = true OR Title.Contains(&quot;კიკეთ&quot;) = true OR Title.Contains(&quot;კოჯორ&quot;) = true OR Title.Contains(&quot;ოქროყან&quot;) = true OR Title.Contains(&quot;ტაბახმელ&quot;) = true OR Title.Contains(&quot;შინდის&quot;) = true OR Title.Contains(&quot;წავკის&quot;) = true OR Title.Contains(&quot;წყნეთ&quot;) = true OR Title.Contains(&quot;მსხალდიდ&quot;) = true OR Title.Contains(&quot;წოდორეთ&quot;) = true OR Title.Contains(&quot;ზემო ლის&quot;) = true OR Title.Contains(&quot;კვესეთ&quot;) = true]" sap:VirtualizedContainerService.HintSize="1048,2805.6" sap2010:WorkflowViewState.IdRef="If_72">
+                                <If Condition="[Title.Contains(&quot;წვერ&quot;) = true OR Title.Contains(&quot;ახალდაბ&quot;) = true OR Title.Contains(&quot;ბეთანია&quot;) = true OR Title.Contains(&quot;კაკლებ&quot;) = true OR Title.Contains(&quot;კიკეთ&quot;) = true OR Title.Contains(&quot;კოჯორ&quot;) = true OR Title.Contains(&quot;ოქროყან&quot;) = true OR Title.Contains(&quot;ტაბახმელ&quot;) = true OR Title.Contains(&quot;შინდის&quot;) = true OR Title.Contains(&quot;წავკის&quot;) = true OR Title.Contains(&quot;წყნეთ&quot;) = true OR Title.Contains(&quot;მსხალდიდ&quot;) = true OR Title.Contains(&quot;წოდორეთ&quot;) = true OR Title.Contains(&quot;ზემო ლის&quot;) = true OR Title.Contains(&quot;კვესეთ&quot;) = true]" sap:VirtualizedContainerService.HintSize="1048,2994.4" sap2010:WorkflowViewState.IdRef="If_72">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1135,7 +977,7 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1014.4,2357.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1014.4,2544.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="s:String[]" Name="KeyWords" />
                                         <Variable x:TypeArguments="x:String" Name="Pattern" />
@@ -1212,17 +1054,17 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,115.2" sap2010:WorkflowViewState.IdRef="Assign_115">
+                                        <Assign sap:VirtualizedContainerService.HintSize="529.6,115.2" sap2010:WorkflowViewState.IdRef="Assign_115">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="s:String[]">[KeyWords]</OutArgument>
                                           </Assign.To>
                                           <Assign.Value>
-                                            <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[{" შეს", "ქ.", ";", "ხევი", "ჩიხი", "გზატ.", "გამზ.", "აღმართი", "მ/რ", 
+                                            <InArgument x:TypeArguments="s:String[]" xml:space="preserve">[{" შეს", "ქუჩა", "ქ.", ";", "ხევი", "ჩიხი", "გზატ.", "გამზ.", "აღმართი", "მ/რ", 
 "გამზირი", "კვარტალი", "დას", "კვარტ.", "მოედანი", "#", "გორა", "აღმ.", "სანაპ.", 
 "გზატკეცილი", "აგარაკები", "ქ ", "ხეივანი", "ჩიხ."}]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_116">
+                                        <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_116">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:String">[Pattern]</OutArgument>
                                           </Assign.To>
@@ -1230,7 +1072,7 @@
                                             <InArgument x:TypeArguments="x:String">["(" + String.Join("|", Keywords) + ").*"]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_117">
+                                        <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_117">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:String">[LocationModed]</OutArgument>
                                           </Assign.To>
@@ -1238,10 +1080,10 @@
                                             <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(LocationModed, pattern, "$1")]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <If Condition="[LocationModed.Contains(&quot;)&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,56.8" sap2010:WorkflowViewState.IdRef="If_69">
+                                        <If Condition="[LocationModed.Contains(&quot;)&quot;)]" sap:VirtualizedContainerService.HintSize="529.6,696" sap2010:WorkflowViewState.IdRef="If_69">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -1288,10 +1130,10 @@
                                             </Sequence>
                                           </If.Else>
                                         </If>
-                                        <If Condition="[LocationModed.Contains(&quot;-&quot;)]" sap:VirtualizedContainerService.HintSize="433.6,48" sap2010:WorkflowViewState.IdRef="If_70">
+                                        <If Condition="[LocationModed.Contains(&quot;-&quot;)]" sap:VirtualizedContainerService.HintSize="529.6,687.2" sap2010:WorkflowViewState.IdRef="If_70">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -1350,7 +1192,7 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NTypeInto>
-                                      <uix:NCheckState DisplayName="Check App State 'SPAN'" sap:VirtualizedContainerService.HintSize="952,661.6" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
+                                      <uix:NCheckState DisplayName="Check App State 'SPAN'" sap:VirtualizedContainerService.HintSize="952,621.6" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
                                         <uix:NCheckState.IfExists>
                                           <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,289.6" sap2010:WorkflowViewState.IdRef="Sequence_315">
                                             <sap:WorkflowViewStateService.ViewState>
@@ -1426,9 +1268,9 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uix:NCheckState>
-                                      <uix:NCheckState DisplayName="Check App State 'SPAN'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="952,1129.6" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
+                                      <uix:NCheckState DisplayName="Check App State 'SPAN'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="952,1356.8" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
                                         <uix:NCheckState.IfExists>
-                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,848" sap2010:WorkflowViewState.IdRef="Sequence_320">
+                                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,1115.2" sap2010:WorkflowViewState.IdRef="Sequence_320">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1501,7 +1343,7 @@
                                                 <InArgument x:TypeArguments="x:String">[LocationModed.Substring(0, LocationModed.Length - 1)]</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ქუჩა'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="433.6,243.2" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[LocationModed]" Version="V4">
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ქუჩა'" EmptyFieldMode="MultiLine" sap:VirtualizedContainerService.HintSize="433.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_20" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[LocationModed]" Version="V4">
                                               <uix:NTypeInto.Target>
                                                 <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" DesignTimeRectangle="660, 490, 291, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='create-app-loc' tag='DIV' /&gt;" Guid="eb3ae0ed-eb65-4f56-94e0-b8ceb2423632" InformativeScreenshot="3a93de1f6679d0c9b583ce822804cf35.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                               </uix:NTypeInto.Target>
@@ -1512,6 +1354,21 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NTypeInto>
+                                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'ქუჩა'" sap:VirtualizedContainerService.HintSize="433.6,260" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                                              <uix:NKeyboardShortcuts.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="ad982ab8-15c8-4830-b802-f162f171d7bd" DesignTimeRectangle="660, 587, 291, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='create-app-loc' tag='DIV' parentclass='sc-19721b7a-0 fAZwZA css-b62m3t-container' /&gt;" Guid="3dd073c5-24fb-4700-8775-09987ddb4533" InformativeScreenshot="1bf66b6d93f05f4a720c44ca4c25d193.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                                              </uix:NKeyboardShortcuts.Target>
+                                              <uix:NKeyboardShortcuts.VerifyOptions>
+                                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                  <uix:VerifyExecutionOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionOptions.Retry>
+                                                  <uix:VerifyExecutionOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionOptions.Timeout>
+                                                </uix:VerifyExecutionOptions>
+                                              </uix:NKeyboardShortcuts.VerifyOptions>
+                                            </uix:NKeyboardShortcuts>
                                           </Sequence>
                                         </uix:NCheckState.IfExists>
                                         <uix:NCheckState.IfNotExists>
@@ -1550,6 +1407,47 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NApplicationCard>
+                      <Sequence DisplayName="Write to SpreadSheet" sap:VirtualizedContainerService.HintSize="545.6,716.8" sap2010:WorkflowViewState.IdRef="Sequence_1278">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{LinksCurrentRow.Item(0).ToString, Location, LocationModed, mdgomareoba}]" DataTable="[ExtractDataTable]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="387.2,220" sap2010:WorkflowViewState.IdRef="AddDataRow_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:AddDataRow>
+                        <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Untitled spreadsheet" BrowserItemId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" ConnectionId="a6a1e84c-2d5d-41d8-b846-ff372ccb2674" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="387.2,384.8" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_4" IncludeHeaders="True" ItemSelectionMode="Browse" Range="[SheetName]" RowPosition="0" Source="[ExtractDataTable]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="Overwrite">
+                          <uga:WriteRangeConnections.FileIdBackup>
+                            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </uga:WriteRangeConnections.FileIdBackup>
+                          <uga:WriteRangeConnections.Item>
+                            <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="1tadFqkR_yrMr38MXQ1C8n89A4EpY5ZG0nLdxlVsmlqY" FriendlyName="Untitled spreadsheet" FullPathHint="My Drive/Untitled spreadsheet" InputMode="Browse" />
+                          </uga:WriteRangeConnections.Item>
+                          <uga:WriteRangeConnections.RangeWriteModeBackup>
+                            <usau:BackupSlot x:TypeArguments="ugase:RangeWriteMode" StoredValue="Overwrite">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugase:RangeWriteMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </uga:WriteRangeConnections.RangeWriteModeBackup>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uga:WriteRangeConnections>
+                      </Sequence>
                     </Sequence>
                   </Sequence>
                 </ActivityAction>
