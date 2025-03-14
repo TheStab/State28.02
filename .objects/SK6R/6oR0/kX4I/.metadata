@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome უძრავი ქონების პორტალი",
+  "Type": "Screen",
+  "Id": "kX4IozKio0KsdevYN9rMeQ",
+  "Reference": "8y7mT8RhU0q1eq9hkL8Yeg/kX4IozKio0KsdevYN9rMeQ",
+  "ParentRef": "8y7mT8RhU0q1eq9hkL8Yeg/6oR0UGeuZUC2l-Z7ZOMYWQ",
+  "Created": "2025-03-14T08:06:43.483241Z",
+  "Updated": "2025-03-14T08:06:43.483241Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

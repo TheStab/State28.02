@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Select Item 'აირჩიეთ სტატუსი '",
+  "Type": "Element",
+  "Id": "PkrkHx0bGkGtOTholPb6mg",
+  "Reference": "8y7mT8RhU0q1eq9hkL8Yeg/PkrkHx0bGkGtOTholPb6mg",
+  "ParentRef": "8y7mT8RhU0q1eq9hkL8Yeg/kX4IozKio0KsdevYN9rMeQ",
+  "Created": "2025-03-14T08:06:43.704574Z",
+  "Updated": "2025-03-14T08:06:43.704574Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,1268.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,1375.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>United_LocAndImages_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -116,32 +116,32 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="United_LocAndImages" sap:VirtualizedContainerService.HintSize="608,1204" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="United_LocAndImages" sap:VirtualizedContainerService.HintSize="608,1310.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1115.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1221.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,875.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,981.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="United Location and Images for Myhome" sap:VirtualizedContainerService.HintSize="449.6,786.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="United Location and Images for Myhome" sap:VirtualizedContainerService.HintSize="449.6,891.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NSelectItem DisplayName="Select Item 'მდებარეობა *'" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="თბილისი" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
+              <uix:NSelectItem DisplayName="Select Item 'მდებარეობა *'" sap:VirtualizedContainerService.HintSize="387.2,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="თბილისი" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
                 <uix:NSelectItem.Items>
                   <scg:List x:TypeArguments="x:String" Capacity="50">
                     <x:String>თბილისი</x:String>
@@ -162,7 +162,6 @@
                     <x:String>საჩხერის რაიონი</x:String>
                     <x:String>ონის რაიონი</x:String>
                     <x:String>ნინოწმინდის რაიონი</x:String>
-                    <x:String>კვესეთი</x:String>
                     <x:String>აბასთუმანი</x:String>
                     <x:String>აბაშა</x:String>
                     <x:String>ამბროლაური</x:String>
@@ -194,14 +193,15 @@
                     <x:String>ონი</x:String>
                     <x:String>საგარეჯო</x:String>
                     <x:String>სამტრედია</x:String>
+                    <x:String>საჩხერე</x:String>
                   </scg:List>
                 </uix:NSelectItem.Items>
                 <uix:NSelectItem.Target>
-                  <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="573, 603, 1060, 53" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='DIV' class='luk-flex luk-justify-start luk-items-end luk-relative luk-cursor-text luk-overflow-hidden luk-border luk-rounded-lg luk-w-full luk-h-12 md:luk-h-14 luk-text-sm luk-font-regular luk-cursor-pointer luk-user-select luk-bg-white luk-border-gray-40' innertext='აირჩიეთ ქალაქი*' /&gt;" Guid="a29fb7be-8559-46a6-9682-244aa43b2e82" ImageBase64="" InformativeScreenshot="70b2bb5cc06e6769823aacd45d9a9836.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*1s71gib*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_R5Q4Z312FE*MTc0MTkzNzUwNS44MS4wLjE3NDE5Mzc1MDUuNjAuMC4xMzY3OTkwNDI.*_ga_95XZDEWDK1*MTc0MTkzNzUwNS41OC4wLjE3NDE5Mzc1MDUuNjAuMC4w" CVScreenId="9cef0021-7b43-484f-b64f-9539b3f58573" DesignTimeRectangle="574, 585, 1060, 52" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl innertext='აირჩიეთ ქალაქი *' parentclass='luk-custom-select luk-relative luk-w-full' /&gt;" Guid="2efb0d19-27c0-4cea-83ba-c73ffdd83fec" ImageBase64="" InformativeScreenshot="bf988830c6fe8ecec1c8bea7c03b6587.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NSelectItem.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>

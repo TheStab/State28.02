@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6EpY2IHA9kuwn2Qv_h5gvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*1s71gib*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_R5Q4Z312FE*MTc0MTkzNzUwNS44MS4wLjE3NDE5Mzc1MDUuNjAuMC4xMzY3OTkwNDI.*_ga_95XZDEWDK1*MTc0MTkzNzUwNS41OC4wLjE3NDE5Mzc1MDUuNjAuMC4w" CVScreenId="c1ed0335-0e71-4ae8-884c-fb5f07f950b4" DesignTimeRectangle="839, 478, 795, 52" DesignTimeScaleFactor="0.9375" FuzzySelectorArgument="&lt;webctrl innertext='აირჩიეთ სტატუსი *' parentclass='luk-custom-select luk-relative luk-w-full' tag='DIV' type='' class='luk-flex luk-justify-start luk-items-end luk-relative luk-cursor-text luk-overflow-hidden luk-border luk-rounded-lg luk-w-full luk-h-12 md:luk-h-14 luk-text-sm luk-font-regular luk-cursor-pointer luk-user-select luk-bg-white luk-border-gray-40' aaname='' check:text='აირჩიეთ სტატუსი *' /&gt;" Guid="8d387b31-2264-45dd-a9e0-5b32366836b4" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="489f412c6900031289981a2050d04df4.png" xmlns="">09MLmtVWnoEKojOsh5gHFvA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
