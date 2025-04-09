@@ -2,13 +2,15 @@
   <x:Members>
     <x:Property Name="GeneralArg" Type="InArgument(x:String)" />
     <x:Property Name="DetailedArg" Type="InArgument(x:String)" />
-    <x:Property Name="RoomArg" Type="InOutArgument(x:String)" />
-    <x:Property Name="FloorArg" Type="InOutArgument(x:String)" />
+    <x:Property Name="RoomArg" Type="InArgument(x:String)" />
+    <x:Property Name="FloorArg" Type="InArgument(x:String)" />
+    <x:Property Name="MaxFloorArg" Type="InArgument(x:String)" />
+    <x:Property Name="BedRoomArg" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,1820</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,3064.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>United_FlatInfo_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,11 +120,9 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="United_FlatInfo" sap:VirtualizedContainerService.HintSize="540.8,1755.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="United_FlatInfo" sap:VirtualizedContainerService.HintSize="608,3000" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="Bedroom" />
       <Variable x:TypeArguments="x:String" Name="Balcony" />
-      <Variable x:TypeArguments="x:String" Name="MaxFloor" />
       <Variable x:TypeArguments="x:String" Name="mdgomareoba" />
       <Variable x:TypeArguments="x:String" Name="proeqtisTipi" />
       <Variable x:TypeArguments="x:String" Name="gatboba" />
@@ -136,17 +136,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Vars" sap:VirtualizedContainerService.HintSize="478.4,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Vars" sap:VirtualizedContainerService.HintSize="545.6,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">საძინებელი</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
             <ui:AssignOperation.To>
               <OutArgument x:TypeArguments="x:String">[Balcony]</OutArgument>
@@ -164,224 +156,244 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <Sequence DisplayName="General" sap:VirtualizedContainerService.HintSize="478.4,115.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[GeneralArg.Contains(RoomArg)]" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="If_6">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,512.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="RoomPosition" />
-            </Sequence.Variables>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,195.2" sap2010:WorkflowViewState.IdRef="Sequence_117">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="General" sap:VirtualizedContainerService.HintSize="449.6,106.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[RoomPosition]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(RoomArg)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[RoomArg]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(RoomPosition+RoomArg.Length).Trim()]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Space" FirstMatch="[RoomArg]" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[RoomArg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" />
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[RoomArg]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[RoomArg(0)]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </If.Else>
-      </If>
-      <If Condition="[GeneralArg.Contains(Bedroom)]" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="If_7">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,512.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="BedroomPosition" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[BedroomPosition]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(Bedroom)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(BedroomPosition+Bedroom.Length).Trim()]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Space" FirstMatch="[Bedroom]" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[Bedroom]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" />
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_6">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Bedroom(0)]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_7">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(RoomArg)-1).ToString]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Else>
-      </If>
-      <If Condition="[GeneralArg.Contains(FloorArg)]" sap:VirtualizedContainerService.HintSize="387.2,76" sap2010:WorkflowViewState.IdRef="If_8">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1208.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="FloorPosition" />
-              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matches" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[FloorPosition]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(FloorArg)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[FloorArg]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(FloorPosition+FloorArg.Length).Trim()]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Floor" FirstMatch="[FloorArg]" sap:VirtualizedContainerService.HintSize="529.6,92" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[FloorArg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" Result="[matches]">
+            <If Condition="[GeneralArg.Contains(RoomArg)]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:Matches>
-            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[MaxFloor]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Matches(1).value]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <If Condition="[Convert.ToInt32(FloorArg.Trim)&gt;Convert.ToInt32(Maxfloor.Trim)]" sap:VirtualizedContainerService.HintSize="529.6,687.2" sap2010:WorkflowViewState.IdRef="If_16">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,420.8" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,512.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <Sequence.Variables>
-                    <Variable x:TypeArguments="x:String" Name="FloorSwitcher" />
+                    <Variable x:TypeArguments="x:Int32" Name="RoomPosition" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_62">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[FloorSwitcher]</OutArgument>
+                      <OutArgument x:TypeArguments="x:Int32">[RoomPosition]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[FloorArg]</InArgument>
+                      <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(RoomArg)]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_63">
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[FloorArg]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String">[RoomArg]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[MaxFloor]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(RoomPosition+RoomArg.Length).Trim()]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_64">
+                  <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Space" FirstMatch="[RoomArg]" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[RoomArg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" />
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
                     <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[MaxFloor]</OutArgument>
+                      <OutArgument x:TypeArguments="x:String">[RoomArg]</OutArgument>
                     </Assign.To>
                     <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[FloorSwitcher]</InArgument>
+                      <InArgument x:TypeArguments="x:String">[RoomArg(0)]</InArgument>
                     </Assign.Value>
                   </Assign>
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[GeneralArg.Contains(BedRoomArg)]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,512.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Int32" Name="BedroomPosition" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[BedroomPosition]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(BedRoomArg)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[BedRoomArg]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(BedroomPosition+BedRoomArg.Length).Trim()]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Space" FirstMatch="[BedRoomArg]" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[BedRoomArg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" />
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_6">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[BedRoomArg]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[BedRoomArg(0)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_7">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[BedRoomArg]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(RoomArg)-1).ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[GeneralArg.Contains(FloorArg)]" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="If_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1208.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Int32" Name="FloorPosition" />
+                    <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matches" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[FloorPosition]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(FloorArg)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[FloorArg]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(FloorPosition+FloorArg.Length).Trim()]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Floor" FirstMatch="[FloorArg]" sap:VirtualizedContainerService.HintSize="529.6,92" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[FloorArg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" Result="[matches]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:Matches>
+                  <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[MaxFloor]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[Matches(1).value]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If Condition="[Convert.ToInt32(FloorArg.Trim)&gt;Convert.ToInt32(Maxfloor.Trim)]" sap:VirtualizedContainerService.HintSize="529.6,687.2" sap2010:WorkflowViewState.IdRef="If_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,420.8" sap2010:WorkflowViewState.IdRef="Sequence_115">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="x:String" Name="FloorSwitcher" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_62">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[FloorSwitcher]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[FloorArg]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_63">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[FloorArg]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[MaxFloor]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_64">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[MaxFloor]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[FloorSwitcher]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -391,26 +403,23 @@
               </If.Else>
             </If>
           </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </If.Else>
-      </If>
-    </Sequence>
-    <Sequence DisplayName="Detailed" sap:VirtualizedContainerService.HintSize="478.4,115.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        </Sequence>
+      </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ახალი გარემონტებული&quot;)]" DisplayName="Else If  მდგომარეობა" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
+    </ui:CommentOut>
+    <Sequence DisplayName="Detailed" sap:VirtualizedContainerService.HintSize="545.6,705.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ახალი გარემონტებული&quot;)]" DisplayName="Else If  მდგომარეობა" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_20" />
         </ui:IfElseIfV2.Else>
@@ -575,7 +584,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;არასტანდარტული&quot;)]" DisplayName="Else If  პროექტი" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_5">
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;არასტანდარტული&quot;)]" DisplayName="Else If  პროექტი" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_5">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_36" />
         </ui:IfElseIfV2.Else>
@@ -873,7 +882,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ცენტრალური გათბობა&quot;)]" DisplayName="Else If  გათბობა" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_6">
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ცენტრალური გათბობა&quot;)]" DisplayName="Else If  გათბობა" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_6">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
             <sap:WorkflowViewStateService.ViewState>
@@ -1025,7 +1034,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ავტოფარეხი&quot;)]" DisplayName="Else If  პარკინგი" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_7">
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ავტოფარეხი&quot;)]" DisplayName="Else If  პარკინგი" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_7">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_51" />
         </ui:IfElseIfV2.Else>
@@ -1152,7 +1161,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;გაზის გამაცხელებელი&quot;)]" DisplayName="Else If  ცხელი წყალი" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_8">
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;გაზის გამაცხელებელი&quot;)]" DisplayName="Else If  ცხელი წყალი" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_8">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_60" />
         </ui:IfElseIfV2.Else>
@@ -1317,7 +1326,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <If Condition="[DetailedArg.Contains(Balcony)]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_9">
+      <If Condition="[DetailedArg.Contains(Balcony)]" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="If_9">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1381,7 +1390,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="387.2,76" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1452,12 +1461,14 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_61">
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_65">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[svWertilebi]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">2</InArgument>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
                 </Assign.Value>
               </Assign>
             </ActivityAction>
@@ -1465,19 +1476,19 @@
         </TryCatch.Catches>
       </TryCatch>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="478.4,1256" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1971.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1016" sap2010:WorkflowViewState.IdRef="Sequence_112">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1731.2" sap2010:WorkflowViewState.IdRef="Sequence_112">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[RoomArg]" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[RoomArg]" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="Switch`1_2">
               <Switch.Default>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Rooms not found&quot;]" />
               </Switch.Default>
@@ -1538,7 +1549,7 @@
                 </uix:NClick.Target>
               </uix:NClick>
             </Switch>
-            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Bedroom]" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="Switch`1_4">
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[BedRoomArg]" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="Switch`1_4">
               <Switch.Default>
                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334.4,144" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Bedrooms not found&quot;]" />
               </Switch.Default>
@@ -1599,7 +1610,7 @@
                 </uix:NClick.Target>
               </uix:NClick>
             </Switch>
-            <If Condition="[String.IsNullOrWhiteSpace(svWertilebi)]" DisplayName="If სველი წერტილები" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[String.IsNullOrWhiteSpace(svWertilebi)]" DisplayName="If სველი წერტილები" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1679,10 +1690,10 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[Not String.IsNullOrWhiteSpace(FloorArg)]" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_15">
+            <If Condition="[Not String.IsNullOrWhiteSpace(FloorArg)]" sap:VirtualizedContainerService.HintSize="449.6,856" sap2010:WorkflowViewState.IdRef="If_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -1704,7 +1715,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'სართულები სულ *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[MaxFloor]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'სართულები სულ *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[MaxFloorArg]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="1243, 629, 390, 50" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl innertext='სართულები სულ*' parentclass='input-container luk-bg-white luk-relative luk-flex luk-h-12 md:luk-h-14 luk-cursor-text luk-items-end luk-overflow-hidden luk-border-gray-40 luk-rounded-lg luk-border focus-within:luk-border-black-100 luk-w-full' /&gt;" Guid="c8b52401-815f-44ac-9500-f3db416a7767" InformativeScreenshot="d906fa2981e296c976495eb3ccae6bad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NTypeInto.Target>
@@ -1727,7 +1738,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;&gt;2000&quot;)]" DisplayName="Else If  Ashenebis Weli" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+            <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;&gt;2000&quot;)]" DisplayName="Else If  Ashenebis Weli" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_94">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1816,7 +1827,7 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <If Condition="[String.IsNullOrWhiteSpace(mdgomareoba)]" DisplayName="If მდგომარეობა" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[String.IsNullOrWhiteSpace(mdgomareoba)]" DisplayName="If მდგომარეობა" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1866,7 +1877,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrWhiteSpace(proeqtisTipi)]" DisplayName="If პროექტის ტიპი" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[String.IsNullOrWhiteSpace(proeqtisTipi)]" DisplayName="If პროექტის ტიპი" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1918,7 +1929,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrWhiteSpace(gatboba)]" DisplayName="If გათბობის ტიპი" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_4">
+            <If Condition="[String.IsNullOrWhiteSpace(gatboba)]" DisplayName="If გათბობის ტიპი" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1961,7 +1972,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrWhiteSpace(parkireba)]" DisplayName="If პარკინგი" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_5">
+            <If Condition="[String.IsNullOrWhiteSpace(parkireba)]" DisplayName="If პარკინგი" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2003,7 +2014,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrWhiteSpace(cxeliWyali)]" DisplayName="If ცხელი წყალი" sap:VirtualizedContainerService.HintSize="353.6,84.8" sap2010:WorkflowViewState.IdRef="If_12">
+            <If Condition="[String.IsNullOrWhiteSpace(cxeliWyali)]" DisplayName="If ცხელი წყალი" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2047,7 +2058,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[Balcony=&quot;აივანი&quot;]" DisplayName="If აივანი" sap:VirtualizedContainerService.HintSize="353.6,77.6" sap2010:WorkflowViewState.IdRef="If_13">
+            <If Condition="[Balcony=&quot;აივანი&quot;]" DisplayName="If აივანი" sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="If_13">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>

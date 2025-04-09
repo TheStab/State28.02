@@ -2,11 +2,15 @@
   <x:Members>
     <x:Property Name="GeneralArg" Type="InArgument(x:String)" />
     <x:Property Name="DetailedArg" Type="InArgument(x:String)" />
+    <x:Property Name="RoomArg" Type="InArgument(x:String)" />
+    <x:Property Name="BedroomArg" Type="InArgument(x:String)" />
+    <x:Property Name="FloorArg" Type="InArgument(x:String)" />
+    <x:Property Name="MaxFloorArg" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,2049.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,2040.8000000000002</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SS_FlatInfo_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,12 +121,8 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SS_FlatInfo" sap:VirtualizedContainerService.HintSize="608,1984.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SS_FlatInfo" sap:VirtualizedContainerService.HintSize="608,1976" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="Room" />
-      <Variable x:TypeArguments="x:String" Name="Bedroom" />
-      <Variable x:TypeArguments="x:String" Name="Floor" />
-      <Variable x:TypeArguments="x:String" Name="MaxFloor" />
       <Variable x:TypeArguments="x:String" Name="Balcony" />
       <Variable x:TypeArguments="x:String" Name="svWertilebi" />
       <Variable x:TypeArguments="x:String" Name="ProeqtisTipi" />
@@ -133,33 +133,9 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Vars" sap:VirtualizedContainerService.HintSize="545.6,242.4" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Vars" sap:VirtualizedContainerService.HintSize="545.6,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[Room]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">ოთახი</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">საძინებელი</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
-          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-            <ui:AssignOperation.To>
-              <OutArgument x:TypeArguments="x:String">[Floor]</OutArgument>
-            </ui:AssignOperation.To>
-            <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">სართული</InArgument>
-            </ui:AssignOperation.Value>
-          </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
             <ui:AssignOperation.To>
               <OutArgument x:TypeArguments="x:String">[Balcony]</OutArgument>
@@ -177,253 +153,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:MultipleAssign>
-    <Sequence DisplayName="General" sap:VirtualizedContainerService.HintSize="545.6,366.4" sap2010:WorkflowViewState.IdRef="Sequence_65">
+    <Sequence DisplayName="Detailed" sap:VirtualizedContainerService.HintSize="545.6,451.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[GeneralArg.Contains(Room)]" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="If_2">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,512.8" sap2010:WorkflowViewState.IdRef="Sequence_61">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="RoomPosition" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[RoomPosition]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(Room)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Room]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(RoomPosition+Room.Length).Trim()]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Space" FirstMatch="[Room]" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[Room]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" />
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_5">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Room]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Room(0)]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_67">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </If.Else>
-      </If>
-      <If Condition="[GeneralArg.Contains(Bedroom)]" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="If_3">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,512.8" sap2010:WorkflowViewState.IdRef="Sequence_62">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="BedroomPosition" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_6">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[BedroomPosition]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(Bedroom)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(BedroomPosition+Bedroom.Length).Trim()]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Space" FirstMatch="[Bedroom]" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[Bedroom]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" />
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_8">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Bedroom(0)]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_68">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_9">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Bedroom]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[(Convert.ToInt32(Room)-1).ToString]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </Sequence>
-        </If.Else>
-      </If>
-      <If Condition="[GeneralArg.Contains(Floor)]" sap:VirtualizedContainerService.HintSize="387.2,76" sap2010:WorkflowViewState.IdRef="If_4">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,1208.8" sap2010:WorkflowViewState.IdRef="Sequence_63">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:Int32" Name="FloorPosition" />
-              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="matches" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Int32">[FloorPosition]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Int32">[GeneralArg.IndexOf(Floor)]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_11">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[Floor]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[GeneralArg.Substring(FloorPosition+Floor.Length).Trim()]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:Matches BuilderPattern="\d+(\.\d+)?" DisplayName="Find Matching Patterns Floor" FirstMatch="[Floor]" sap:VirtualizedContainerService.HintSize="529.6,92" sap2010:WorkflowViewState.IdRef="Matches_4" Input="[Floor]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d+(\\.\\d+)?&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d+" RegexOption="IgnoreCase, Compiled" Result="[matches]">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:Matches>
-            <Assign sap:VirtualizedContainerService.HintSize="529.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_12">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:String">[MaxFloor]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[Matches(1).value]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <If Condition="[Convert.ToInt32(Floor.Trim)&gt;Convert.ToInt32(Maxfloor.Trim)]" sap:VirtualizedContainerService.HintSize="529.6,687.2" sap2010:WorkflowViewState.IdRef="If_6">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,420.8" sap2010:WorkflowViewState.IdRef="Sequence_97">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="x:String" Name="FloorSwitcher" />
-                  </Sequence.Variables>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_43">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[FloorSwitcher]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[Floor]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_41">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[Floor]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[MaxFloor]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_42">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[MaxFloor]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">[FloorSwitcher]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_98">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Sequence>
-              </If.Else>
-            </If>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_69">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </If.Else>
-      </If>
-    </Sequence>
-    <Sequence DisplayName="Detailed" sap:VirtualizedContainerService.HintSize="545.6,339.2" sap2010:WorkflowViewState.IdRef="Sequence_66">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ახალი გარემონტებული&quot;)]" DisplayName="Else If  მდგომარეობა" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_9">
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ახალი გარემონტებული&quot;)]" DisplayName="Else If  მდგომარეობა" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_9">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_78" />
         </ui:IfElseIfV2.Else>
@@ -588,7 +325,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;არასტანდარტული&quot;)]" DisplayName="Else If  პროექტი" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_10">
+      <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;არასტანდარტული&quot;)]" DisplayName="Else If  პროექტი" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_10">
         <ui:IfElseIfV2.Else>
           <Sequence DisplayName="Else" sap2010:WorkflowViewState.IdRef="Sequence_94" />
         </ui:IfElseIfV2.Else>
@@ -886,7 +623,7 @@
           </Sequence>
         </ui:IfElseIfV2.Then>
       </ui:IfElseIfV2>
-      <If Condition="[DetailedArg.Contains(Balcony)]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_5">
+      <If Condition="[DetailedArg.Contains(Balcony)]" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="If_5">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -942,7 +679,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="387.2,76" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1013,12 +750,14 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Assign sap:VirtualizedContainerService.HintSize="433.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_40">
+              <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_40">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[svWertilebi]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">2</InArgument>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
                 </Assign.Value>
               </Assign>
             </ActivityAction>
@@ -1026,19 +765,19 @@
         </TryCatch.Catches>
       </TryCatch>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="545.6,948" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="545.6,1286.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,708" sap2010:WorkflowViewState.IdRef="Sequence_60">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1046.4" sap2010:WorkflowViewState.IdRef="Sequence_60">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:IfElseIfV2 Condition="[Room=&quot;1&quot;]" DisplayName="Else If  Room" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+            <ui:IfElseIfV2 Condition="[RoomArg=&quot;1&quot;]" DisplayName="Else If  Room" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1051,7 +790,7 @@
               </ui:IfElseIfV2.Else>
               <ui:IfElseIfV2.ElseIfs>
                 <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;2&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;2&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1067,7 +806,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;3&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;3&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1083,7 +822,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;4&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;4&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1099,7 +838,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;5&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;5&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1115,7 +854,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;6&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;6&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1131,7 +870,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;7&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;7&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1147,7 +886,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;8&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_7">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;8&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_7">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1163,7 +902,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;9&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_8">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;9&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_8">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,556" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1176,7 +915,7 @@
                             <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="8d26525d-0ee5-408a-ba44-ea55d839abc0" DesignTimeRectangle="917, 643, 50, 48" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl innertext='8+' parentclass='sc-e8a87f7a-4 jdtBxj' /&gt;" Guid="da6fd430-d645-44f3-ad9e-391efe6e12dc" InformativeScreenshot="380004f73eef61f9ea0bc14ab077d2c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Bedroom]" Version="V4">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[BedroomArg]" Version="V4">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="3b27c9a5-ea34-4802-a3c4-c5d7786df4e2" DesignTimeRectangle="976, 644, 192, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl placeholder='ოთახები' parentclass='sc-1f939879-5 dkEa-dI' /&gt;" Guid="ea202c3b-93d3-4610-ba7b-1012ee61f133" InformativeScreenshot="d5f3c80bf5c517e8983740b0be1c0f6f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
@@ -1194,7 +933,7 @@
                       </Sequence>
                     </ui:IfElseIfBlock.Then>
                   </ui:IfElseIfBlock>
-                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Room=&quot;10+&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_9">
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[RoomArg=&quot;10+&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_9">
                     <ui:IfElseIfBlock.Then>
                       <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,556" sap2010:WorkflowViewState.IdRef="Sequence_14">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1207,7 +946,7 @@
                             <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="8a6f20e8-c3bf-4771-a068-7447ae7b0640" DesignTimeRectangle="917, 568, 50, 48" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl innertext='8+' parentclass='sc-e8a87f7a-4 jdtBxj' /&gt;" Guid="52976910-8a9e-49e1-adba-1a1352f8ac81" InformativeScreenshot="380004f73eef61f9ea0bc14ab077d2c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Bedroom]" Version="V4">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,277.6" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[BedroomArg]" Version="V4">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="3b27c9a5-ea34-4802-a3c4-c5d7786df4e2" DesignTimeRectangle="976, 569, 192, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl placeholder='ოთახები' parentclass='sc-1f939879-5 dkEa-dI' /&gt;" Guid="ea202c3b-93d3-4610-ba7b-1012ee61f133" InformativeScreenshot="d5f3c80bf5c517e8983740b0be1c0f6f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                           </uix:NTypeInto.Target>
@@ -1248,7 +987,7 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <If Condition="[Convert.ToInt32(Room)&lt;9]" DisplayName="If Bedroom" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[Convert.ToInt32(RoomArg)&lt;9]" DisplayName="If Bedroom" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1263,7 +1002,7 @@
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:IfElseIfV2 Condition="[Bedroom=&quot;1&quot;]" DisplayName="Else If  Bedroom" sap:VirtualizedContainerService.HintSize="449.6,3198.4" sap2010:WorkflowViewState.IdRef="IfElseIfV2_7">
+                  <ui:IfElseIfV2 Condition="[BedroomArg=&quot;1&quot;]" DisplayName="Else If  Bedroom" sap:VirtualizedContainerService.HintSize="449.6,3198.4" sap2010:WorkflowViewState.IdRef="IfElseIfV2_7">
                     <ui:IfElseIfV2.Else>
                       <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,445.6" sap2010:WorkflowViewState.IdRef="Sequence_24">
                         <sap:WorkflowViewStateService.ViewState>
@@ -1281,7 +1020,7 @@
                     </ui:IfElseIfV2.Else>
                     <ui:IfElseIfV2.ElseIfs>
                       <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;2&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_10">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;2&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_10">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1297,7 +1036,7 @@
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;3&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_11">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;3&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_11">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_18">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1313,7 +1052,7 @@
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;4&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_12">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;4&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_12">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1329,7 +1068,7 @@
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;5&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_13">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;5&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_13">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_20">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1345,7 +1084,7 @@
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;6&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_14">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;6&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_14">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1361,7 +1100,7 @@
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;7&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_15">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;7&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_15">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_22">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1377,7 +1116,7 @@
                             </Sequence>
                           </ui:IfElseIfBlock.Then>
                         </ui:IfElseIfBlock>
-                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Bedroom=&quot;8&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_16">
+                        <ui:IfElseIfBlock BlockType="ElseIf" Condition="[BedroomArg=&quot;8&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_16">
                           <ui:IfElseIfBlock.Then>
                             <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_23">
                               <sap:WorkflowViewStateService.ViewState>
@@ -1428,7 +1167,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[Floor]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[FloorArg]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="54c11e90-821a-46a2-8114-f2ad94ddc0e3" DesignTimeRectangle="862, 543, 189, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl placeholder='სართული' parentclass='sc-1f939879-5 dkEa-dI' /&gt;" Guid="a64376c5-90a1-4f34-9cf6-07dc0223508d" InformativeScreenshot="451242fc9d05c769394c3d7a2b99487d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -1449,7 +1188,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[MaxFloor]" Version="V4">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Text="[MaxFloorArg]" Version="V4">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="c3a926be-aec6-4ff3-836e-e6875ba9cd5b" DesignTimeRectangle="1069, 543, 189, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl placeholder='სართულიანობა' parentclass='sc-1f939879-5 dkEa-dI' /&gt;" Guid="e7dc6acc-2768-42c2-ab57-01d90ab73150" InformativeScreenshot="8af6fa0a743e0605b6bba0374fb9bdc1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -1470,7 +1209,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <ui:IfElseIfV2 Condition="[Balcony=&quot;1&quot;]" DisplayName="Else If  Balcony" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
+            <ui:IfElseIfV2 Condition="[Balcony=&quot;1&quot;]" DisplayName="Else If  Balcony" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_2">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,445.6" sap2010:WorkflowViewState.IdRef="Sequence_33">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1591,7 +1330,7 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <ui:IfElseIfV2 Condition="[svWertilebi.Contains(&quot;1&quot;)]" DisplayName="Else If  Sveli Wertili" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+            <ui:IfElseIfV2 Condition="[svWertilebi.Contains(&quot;1&quot;)]" DisplayName="Else If  Sveli Wertili" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,481.6" sap2010:WorkflowViewState.IdRef="Sequence_38">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1705,7 +1444,7 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_4">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,1663.2" sap2010:WorkflowViewState.IdRef="Sequence_43">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1795,7 +1534,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ახალი აშენებული&quot;)]" DisplayName="Else If  AshenebisDro" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
+            <ui:IfElseIfV2 Condition="[DetailedArg.Contains(&quot;ახალი აშენებული&quot;)]" DisplayName="Else If  AshenebisDro" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_47">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1863,7 +1602,7 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <ui:IfElseIfV2 Condition="[ProeqtisTipi=&quot;ჩეხური&quot;]" DisplayName="Else If  Proeqtis Tipi" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_5">
+            <ui:IfElseIfV2 Condition="[ProeqtisTipi=&quot;ჩეხური&quot;]" DisplayName="Else If  Proeqtis Tipi" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="IfElseIfV2_5">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,445.6" sap2010:WorkflowViewState.IdRef="Sequence_49">
                   <sap:WorkflowViewStateService.ViewState>
@@ -1903,7 +1642,7 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <Sequence DisplayName="Xedi" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_50">
+            <Sequence DisplayName="Xedi" sap:VirtualizedContainerService.HintSize="449.6,115.2" sap2010:WorkflowViewState.IdRef="Sequence_50">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1971,7 +1710,7 @@
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
             </Sequence>
-            <ui:IfElseIfV2 Condition="[Mdgomareoba=&quot;ახალი გარემონტებული&quot;]" DisplayName="Else If  Mdgomareoba" sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="IfElseIfV2_6">
+            <ui:IfElseIfV2 Condition="[Mdgomareoba=&quot;ახალი გარემონტებული&quot;]" DisplayName="Else If  Mdgomareoba" sap:VirtualizedContainerService.HintSize="449.6,77.6" sap2010:WorkflowViewState.IdRef="IfElseIfV2_6">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,445.6" sap2010:WorkflowViewState.IdRef="Sequence_59">
                   <sap:WorkflowViewStateService.ViewState>

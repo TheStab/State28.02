@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="United_EndForMyHome" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="United_EndForMyHome" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="SpaceArg" Type="InArgument(x:String)" />
     <x:Property Name="PriceArg" Type="InArgument(x:String)" />
@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,1694.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,1678.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>United_EndForMyHome_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,25 +118,25 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="United_EndForMyHome" sap:VirtualizedContainerService.HintSize="608,1629.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="United_EndForMyHome" sap:VirtualizedContainerService.HintSize="608,1613.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1540.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1524.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1300.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1244.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="United End for MyHome" sap:VirtualizedContainerService.HintSize="449.6,1210.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="United End for MyHome" sap:VirtualizedContainerService.HintSize="449.6,1154.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,17 +187,34 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ტელეფონის ნომერი *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[AgentMobileNumberArg]" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" CVScreenId="accdd0d1-51f0-4161-b206-1448e934ee04" DesignTimeRectangle="840, 431, 793, 51" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl parentclass='input-container luk-bg-white luk-relative luk-flex luk-h-12 md:luk-h-14 luk-cursor-text luk-items-end luk-overflow-hidden luk-border-gray-40 luk-rounded-lg luk-border focus-within:luk-border-black-100 luk-w-full' innertext='ტელეფონის ნომერი *' /&gt;" Guid="25693274-7de5-4996-ac8e-d7888e8a09d3" InformativeScreenshot="16cd95a98900f9d78fd9392dc442f697.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                </uix:NTypeInto.Target>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,330.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ტელეფონის ნომერი *'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,241.6" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[AgentMobileNumberArg]" Version="V4">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" CVScreenId="accdd0d1-51f0-4161-b206-1448e934ee04" DesignTimeRectangle="840, 431, 793, 51" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl parentclass='input-container luk-bg-white luk-relative luk-flex luk-h-12 md:luk-h-14 luk-cursor-text luk-items-end luk-overflow-hidden luk-border-gray-40 luk-rounded-lg luk-border focus-within:luk-border-black-100 luk-w-full' innertext='ტელეფონის ნომერი *' /&gt;" Guid="25693274-7de5-4996-ac8e-d7888e8a09d3" InformativeScreenshot="16cd95a98900f9d78fd9392dc442f697.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ui:CommentOut.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </uix:NTypeInto>
+              </ui:CommentOut>
               <uix:NTypeInto ActivateBefore="False" ClickBeforeMode="None" DisplayName="Type Into 'TEXTAREA'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="Simulate" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[DescriptionArg]" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" CVScreenId="8bf9aa09-a86a-45a0-ba19-44d2ddcaeefe" DesignTimeRectangle="574, 682, 1060, 90" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' placeholder='დაწერეთ დამატებითი აღწერა' /&gt;" Guid="de641b0d-a9aa-42ff-92a4-8da8bb9ef017" InformativeScreenshot="860aa8e58c7e02416dcbbb444a6836bb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
@@ -313,7 +330,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NGetText>
-              <Assign sap:VirtualizedContainerService.HintSize="387.2,77.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[MyHome_IDArg]</OutArgument>
                 </Assign.To>
