@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1258.4,4214.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1258.4,3993.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SS_Location_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -115,25 +115,25 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SS_Location" sap:VirtualizedContainerService.HintSize="1268.8,4149.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SS_Location" sap:VirtualizedContainerService.HintSize="1268.8,3928.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="1206.4,4060.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი" sap:VirtualizedContainerService.HintSize="1206.4,3840" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1172.8,3820.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1172.8,3600" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Location" sap:VirtualizedContainerService.HintSize="1110.4,3732" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Location" sap:VirtualizedContainerService.HintSize="1110.4,3509.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="LocationCheck" />
                 <Variable x:TypeArguments="x:String" Name="LocationModed" />
@@ -144,17 +144,7 @@
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="1048,114.4" sap2010:WorkflowViewState.IdRef="Assign_19">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">[CheckLocationArg]</OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">
-                    <Literal x:TypeArguments="x:String" Value="" />
-                  </InArgument>
-                </Assign.Value>
-              </Assign>
-              <If Condition="[TitleArg.Contains(&quot;წვერ&quot;) = true OR TitleArg.Contains(&quot;ახალდაბ&quot;) = true OR TitleArg.Contains(&quot;ბეთანია&quot;) = true OR TitleArg.Contains(&quot;კაკლებ&quot;) = true OR TitleArg.Contains(&quot;კიკეთ&quot;) = true OR TitleArg.Contains(&quot;კოჯორ&quot;) = true OR TitleArg.Contains(&quot;ოქროყან&quot;) = true OR TitleArg.Contains(&quot;ტაბახმელ&quot;) = true OR TitleArg.Contains(&quot;შინდის&quot;) = true OR TitleArg.Contains(&quot;წავკის&quot;) = true OR TitleArg.Contains(&quot;წყნეთ&quot;) = true OR TitleArg.Contains(&quot;მსხალდიდ&quot;) = true OR TitleArg.Contains(&quot;წოდორეთ&quot;) = true OR TitleArg.Contains(&quot;ზემო ლის&quot;) = true OR TitleArg.Contains(&quot;კვესეთ&quot;) = true]" sap:VirtualizedContainerService.HintSize="1048,3226.4" sap2010:WorkflowViewState.IdRef="If_5">
+              <If Condition="[TitleArg.Contains(&quot;წვერ&quot;) = true OR TitleArg.Contains(&quot;ახალდაბ&quot;) = true OR TitleArg.Contains(&quot;ბეთანია&quot;) = true OR TitleArg.Contains(&quot;კაკლებ&quot;) = true OR TitleArg.Contains(&quot;კიკეთ&quot;) = true OR TitleArg.Contains(&quot;კოჯორ&quot;) = true OR TitleArg.Contains(&quot;ოქროყან&quot;) = true OR TitleArg.Contains(&quot;ტაბახმელ&quot;) = true OR TitleArg.Contains(&quot;შინდის&quot;) = true OR TitleArg.Contains(&quot;წავკის&quot;) = true OR TitleArg.Contains(&quot;წყნეთ&quot;) = true OR TitleArg.Contains(&quot;მსხალდიდ&quot;) = true OR TitleArg.Contains(&quot;წოდორეთ&quot;) = true OR TitleArg.Contains(&quot;ზემო ლის&quot;) = true OR TitleArg.Contains(&quot;კვესეთ&quot;) = true]" sap:VirtualizedContainerService.HintSize="1048,3115.2" sap2010:WorkflowViewState.IdRef="If_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -184,7 +174,7 @@
                   </Sequence>
                 </If.Then>
                 <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1014.4,2769.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="1014.4,2658.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="s:String[]" Name="KeyWords" />
                       <Variable x:TypeArguments="x:String" Name="Pattern" />
@@ -357,7 +347,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NCheckState DisplayName="Check App State 'SPAN'" sap:VirtualizedContainerService.HintSize="952,620" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
+                    <uix:NCheckState DisplayName="Check App State 'SPAN'" sap:VirtualizedContainerService.HintSize="952,621.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
                       <uix:NCheckState.IfExists>
                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,289.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
@@ -374,7 +364,7 @@
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,369.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,371.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -433,9 +423,9 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
-                    <uix:NCheckState DisplayName="Check App State 'SPAN'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="952,1469.6" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
+                    <uix:NCheckState DisplayName="Check App State 'SPAN'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="952,1356.8" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Timeout="2" Version="V4">
                       <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,1228" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,1115.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:Int32" Name="Index" />
                           </Sequence.Variables>
@@ -522,7 +512,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
-                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'ქუჩა'" sap:VirtualizedContainerService.HintSize="433.6,267.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'ქუჩა'" sap:VirtualizedContainerService.HintSize="433.6,260" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="8d789e7f-df87-4f1c-9784-7d3dd61ca4d4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
                             <uix:NKeyboardShortcuts.Target>
                               <uix:TargetAnchorable BrowserURL="https://home.ss.ge/ka/udzravi-qoneba/create" CVScreenId="ad982ab8-15c8-4830-b802-f162f171d7bd" DesignTimeRectangle="661, 832, 291, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='create-app-loc' parentclass='sc-19721b7a-0 fAZwZA css-b62m3t-container' idx='3' /&gt;" Guid="3dd073c5-24fb-4700-8775-09987ddb4533" InformativeScreenshot="0f382fe1bce28a232e8d84ad8f8e9696.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ss.ge | სიტყვა და საქმე უფასო განცხადებების საიტი' idx='2' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                             </uix:NKeyboardShortcuts.Target>
@@ -537,14 +527,6 @@
                               </uix:VerifyExecutionOptions>
                             </uix:NKeyboardShortcuts.VerifyOptions>
                           </uix:NKeyboardShortcuts>
-                          <Assign sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Assign_18">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:String">[CheckLocationArg]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">Check Location</InArgument>
-                            </Assign.Value>
-                          </Assign>
                         </Sequence>
                       </uix:NCheckState.IfExists>
                       <uix:NCheckState.IfNotExists>

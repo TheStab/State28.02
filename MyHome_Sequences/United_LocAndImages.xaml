@@ -11,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,1330.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,1468.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>United_LocAndImages_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -121,7 +121,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="United_LocAndImages" sap:VirtualizedContainerService.HintSize="608,1265.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="United_LocAndImages" sap:VirtualizedContainerService.HintSize="608,1404" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -135,26 +135,26 @@
         <InArgument x:TypeArguments="x:Boolean">False</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1063.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="545.6,1201.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,823.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,961.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="United Location and Images for Myhome" sap:VirtualizedContainerService.HintSize="449.6,732.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="United Location and Images for Myhome" sap:VirtualizedContainerService.HintSize="449.6,871.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NSelectItem DisplayName="Select Item 'მდებარეობა *'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="თბილისი" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
+              <uix:NSelectItem DisplayName="Select Item 'მდებარეობა *'" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="თბილისი" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
                 <uix:NSelectItem.Items>
                   <scg:List x:TypeArguments="x:String" Capacity="50">
                     <x:String>თბილისი</x:String>
@@ -219,7 +219,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NSelectItem>
-              <uix:NSelectItem AlterIfDisabled="True" DisplayName="Select Item 'სტატუსი *'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[StatusArg]" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
+              <uix:NSelectItem AlterIfDisabled="True" DisplayName="Select Item 'სტატუსი *'" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="[StatusArg]" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
                 <uix:NSelectItem.Items>
                   <scg:List x:TypeArguments="x:String" Capacity="3">
                     <x:String>ძველი აშენებული</x:String>
@@ -243,89 +243,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NSelectItem>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NSelectItem DisplayName="Select Item 'მდებარეობა *'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="თბილისი" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
-                      <uix:NSelectItem.Items>
-                        <scg:List x:TypeArguments="x:String" Capacity="50">
-                          <x:String>თბილისი</x:String>
-                          <x:String>ბათუმი</x:String>
-                          <x:String>ქუთაისი</x:String>
-                          <x:String>რუსთავი</x:String>
-                          <x:String>ზუგდიდი</x:String>
-                          <x:String>თელავი</x:String>
-                          <x:String>გორი</x:String>
-                          <x:String>ბაკურიანი</x:String>
-                          <x:String>ბორჯომი</x:String>
-                          <x:String>გუდაური</x:String>
-                          <x:String>ჯავა</x:String>
-                          <x:String>აფხაზეთის ავტონომიური რესპუბლიკა</x:String>
-                          <x:String>დმანისის რაიონი</x:String>
-                          <x:String>ცხინვალის რაიონი</x:String>
-                          <x:String>სენაკის რაიონი</x:String>
-                          <x:String>საჩხერის რაიონი</x:String>
-                          <x:String>ონის რაიონი</x:String>
-                          <x:String>ნინოწმინდის რაიონი</x:String>
-                          <x:String>აბასთუმანი</x:String>
-                          <x:String>აბაშა</x:String>
-                          <x:String>ამბროლაური</x:String>
-                          <x:String>აფხაზეთი</x:String>
-                          <x:String>ახალქალაქი</x:String>
-                          <x:String>ახალციხე</x:String>
-                          <x:String>ახმეტა</x:String>
-                          <x:String>ბაღდათი</x:String>
-                          <x:String>ბოლნისი</x:String>
-                          <x:String>გარდაბანი</x:String>
-                          <x:String>გურჯაანი</x:String>
-                          <x:String>დედოფლისწყარო</x:String>
-                          <x:String>დმანისი</x:String>
-                          <x:String>დუშეთი</x:String>
-                          <x:String>ვანი</x:String>
-                          <x:String>ზესტაფონი</x:String>
-                          <x:String>თეთრიწყარო</x:String>
-                          <x:String>თერჯოლა</x:String>
-                          <x:String>კასპი</x:String>
-                          <x:String>ლაგოდეხი</x:String>
-                          <x:String>ლანჩხუთი</x:String>
-                          <x:String>მანგლისი</x:String>
-                          <x:String>მარნეული</x:String>
-                          <x:String>მარტვილი</x:String>
-                          <x:String>მესტია</x:String>
-                          <x:String>მცხეთა</x:String>
-                          <x:String>ნინოწმინდა</x:String>
-                          <x:String>ოზურგეთი</x:String>
-                          <x:String>ონი</x:String>
-                          <x:String>საგარეჯო</x:String>
-                          <x:String>სამტრედია</x:String>
-                          <x:String>საჩხერე</x:String>
-                        </scg:List>
-                      </uix:NSelectItem.Items>
-                      <uix:NSelectItem.Target>
-                        <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*1s71gib*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_R5Q4Z312FE*MTc0MTkzNzUwNS44MS4wLjE3NDE5Mzc1MDUuNjAuMC4xMzY3OTkwNDI.*_ga_95XZDEWDK1*MTc0MTkzNzUwNS41OC4wLjE3NDE5Mzc1MDUuNjAuMC4w" CVScreenId="9cef0021-7b43-484f-b64f-9539b3f58573" DesignTimeRectangle="574, 603, 1060, 53" DesignTimeScaleFactor="0.9375" ElementType="InputBox" FullSelectorArgument="&lt;webctrl innertext='აირჩიეთ ქალაქი *' parentclass='luk-custom-select luk-relative luk-w-full' /&gt;" Guid="2efb0d19-27c0-4cea-83ba-c73ffdd83fec" ImageBase64="" InformativeScreenshot="9eeac65104dc0c205f8313145d101f7d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                      </uix:NSelectItem.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NSelectItem>
-                  </Sequence>
-                </ui:CommentOut.Body>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:CommentOut>
-              <Assign sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[LocationArg]</OutArgument>
                 </Assign.To>
@@ -339,7 +257,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ჩაწერეთ ქუჩა'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[LocationArg]" Version="V3">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ჩაწერეთ ქუჩა'" EmptyFieldMode="None" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Text="[LocationArg]" Version="V3">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="574, 660, 522, 53" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl innertext='ჩაწერეთ ქუჩა' parentclass='select-container' /&gt;" Guid="b441aa63-d313-4f6a-b5f1-c1fe24629aa0" InformativeScreenshot="04c696af293d56406f3595b2e0b090a5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NTypeInto.Target>
@@ -350,7 +268,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'მირიან მეფის'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'მირიან მეფის'" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="586, 731, 480, 60" DesignTimeScaleFactor="0.9375" ElementType="ListItem" FullSelectorArgument="&lt;webctrl parentclass='list-none p-0 m-0' idx='1' /&gt;" Guid="edffdd75-c592-438b-a7e2-8a8c97cf615e" InformativeScreenshot="b918f70563bde6f35512aa05dba34f81.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -361,52 +279,69 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NGetText DisplayName="Get Text 'რაიონი ვაკე-საბურთალო'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" TextString="[RaionArg]" Version="V4">
-                <uix:NGetText.Target>
-                  <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*132tzb6*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_6HK598T3S9*MTc0NDIyMTc3OS41Mi4wLjE3NDQyMjE3NzkuNjAuMC4zMTczMTYxODM.*_ga_R5Q4Z312FE*MTc0NDIyMTc3OS4xMDkuMC4xNzQ0MjIxNzc5LjYwLjAuMjk1MjYzMDI4" CVScreenId="0d2a1ef3-6a4b-46ea-bc4f-08832cdfaeec" DesignTimeRectangle="574, 753, 522, 53" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl parentclass='luk-flex luk-w-full luk-flex-col luk-gap-1' idx='2' /&gt;" Guid="8ee8918e-21bf-4ed4-b023-e366987a07d1" ImageBase64="" InformativeScreenshot="6f2767fede2136f44dcb4b7140920148.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                </uix:NGetText.Target>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="592,633.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'რაიონი ვაკე-საბურთალო'" sap:VirtualizedContainerService.HintSize="529.6,84.8" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" TextString="[RaionArg]" Version="V4">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*132tzb6*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_6HK598T3S9*MTc0NDIyMTc3OS41Mi4wLjE3NDQyMjE3NzkuNjAuMC4zMTczMTYxODM.*_ga_R5Q4Z312FE*MTc0NDIyMTc3OS4xMDkuMC4xNzQ0MjIxNzc5LjYwLjAuMjk1MjYzMDI4" CVScreenId="0d2a1ef3-6a4b-46ea-bc4f-08832cdfaeec" DesignTimeRectangle="574, 753, 522, 53" DesignTimeScaleFactor="0.9375" FullSelectorArgument="&lt;webctrl parentclass='luk-flex luk-w-full luk-flex-col luk-gap-1' idx='2' /&gt;" Guid="8ee8918e-21bf-4ed4-b023-e366987a07d1" ImageBase64="" InformativeScreenshot="6f2767fede2136f44dcb4b7140920148.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <If Condition="[Not TitleArg.Contains(System.Text.RegularExpressions.Regex.Match(TitleArg, &quot;[^ ]+$&quot;).Value.Substring(0, System.Text.RegularExpressions.Regex.Match(TitleArg, &quot;[^ ]+$&quot;).Value.Length - 2))]" sap:VirtualizedContainerService.HintSize="529.6,460" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[ShouldContinueArg]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ui:CommentOut.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </uix:NGetText>
-              <If Condition="[Not RaionArg.Contains(System.Text.RegularExpressions.Regex.Match(TitleArg, &quot;[^ ]+$&quot;).Value.Substring(0, System.Text.RegularExpressions.Regex.Match(TitleArg, &quot;[^ ]+$&quot;).Value.Length - 2))]" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_2">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,193.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Boolean">[ShouldContinueArg]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </Sequence>
-                </If.Else>
-              </If>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+ატვირთე ან ჩააგდეშეგიძ…'" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
+              </ui:CommentOut>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+ატვირთე ან ჩააგდეშეგიძ…'" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="575, 461, 1058, 300" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl innertext='+ატვირთე ან ჩააგდეშეგიძლიათ ატვირთოთ მაქსიმუმ 12 ფოტო მინიმალური რეზოლუცია 300x500 (PNG,JPG,JPEG)' parentclass='document-uploader relative w-full' /&gt;" Guid="b9c6b8db-4812-47df-afc3-366c7dc71b56" InformativeScreenshot="14239a921f1d1054febf794b5ba26a0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
@@ -427,7 +362,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NClick>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="296186fa-e0ab-41f5-9e41-0d0ca31e661d" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="296186fa-e0ab-41f5-9e41-0d0ca31e661d" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
@@ -521,7 +456,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
-              <If Condition="[SakadastroArg &lt;&gt; &quot;საკადასტროს გარეშე&quot;]" sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[SakadastroArg &lt;&gt; &quot;საკადასტროს გარეშე&quot;]" sap:VirtualizedContainerService.HintSize="387.2,77.6" sap2010:WorkflowViewState.IdRef="If_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>

@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,2457.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,2708</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>United_Parameters_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -113,7 +113,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="United_Parameters" sap:VirtualizedContainerService.HintSize="670.4,2392.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="United_Parameters" sap:VirtualizedContainerService.HintSize="670.4,2643.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Interneti" />
       <Variable x:TypeArguments="x:String" Name="Televizia" />
@@ -172,10 +172,10 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Cvladebi" sap:VirtualizedContainerService.HintSize="608,115.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="Cvladebi" sap:VirtualizedContainerService.HintSize="608,623.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -762,26 +762,26 @@
         </If.Else>
       </If>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="608,2188.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი" sap:VirtualizedContainerService.HintSize="608,1931.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574.4,1948.8" sap2010:WorkflowViewState.IdRef="Sequence_103">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="574.4,1691.2" sap2010:WorkflowViewState.IdRef="Sequence_103">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Damatebiti" sap:VirtualizedContainerService.HintSize="512,1320" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Damatebiti" sap:VirtualizedContainerService.HintSize="512,115.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[DetailedArg.Contains(Auzi)]" DisplayName="If Auzi" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_9">
+              <If Condition="[DetailedArg.Contains(Auzi)]" DisplayName="If Auzi" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -817,7 +817,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[DetailedArg.Contains(Misagebi)]" DisplayName="If Misagebi" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_10">
+              <If Condition="[DetailedArg.Contains(Misagebi)]" DisplayName="If Misagebi" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -853,7 +853,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[DetailedArg.Contains(Lojia)]" DisplayName="If Lojia" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_11">
+              <If Condition="[DetailedArg.Contains(Lojia)]" DisplayName="If Lojia" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_11">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -889,7 +889,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[DetailedArg.Contains(Veranda)]" DisplayName="If Veranda" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_12">
+              <If Condition="[DetailedArg.Contains(Veranda)]" DisplayName="If Veranda" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_12">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -925,7 +925,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[DetailedArg.Contains(Satavso)]" DisplayName="If Satavso" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_13">
+              <If Condition="[DetailedArg.Contains(Satavso)]" DisplayName="If Satavso" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_13">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -961,7 +961,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[DetailedArg.Contains(Mosacdeli)]" DisplayName="If Mosacdeli" sap:VirtualizedContainerService.HintSize="449.6,84.8" sap2010:WorkflowViewState.IdRef="If_66">
+              <If Condition="[DetailedArg.Contains(Mosacdeli)]" DisplayName="If Mosacdeli" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_66">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -997,10 +997,10 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[DetailedArg.Contains(Ezo)]" DisplayName="If Ezo" sap:VirtualizedContainerService.HintSize="449.6,688.8" sap2010:WorkflowViewState.IdRef="If_67">
+              <If Condition="[DetailedArg.Contains(Ezo)]" DisplayName="If Ezo" sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="If_67">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -1034,7 +1034,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <Sequence DisplayName="Maxasiateblebi" sap:VirtualizedContainerService.HintSize="512,115.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Maxasiateblebi" sap:VirtualizedContainerService.HintSize="512,56.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1362,7 +1362,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <Sequence DisplayName="Upiratesobebi" sap:VirtualizedContainerService.HintSize="512,115.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Upiratesobebi" sap:VirtualizedContainerService.HintSize="512,56.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1690,7 +1690,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <If Condition="[String.IsNullOrWhiteSpace(FurnitureArg)]" DisplayName="If Furniture" sap:VirtualizedContainerService.HintSize="512,84.8" sap2010:WorkflowViewState.IdRef="If_34">
+            <If Condition="[String.IsNullOrWhiteSpace(FurnitureArg)]" DisplayName="If Furniture" sap:VirtualizedContainerService.HintSize="512,56.8" sap2010:WorkflowViewState.IdRef="If_34">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2078,7 +2078,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <Sequence DisplayName="Maxasiateblebi Miwa" sap:VirtualizedContainerService.HintSize="512,115.2" sap2010:WorkflowViewState.IdRef="Sequence_130">
+            <Sequence DisplayName="Maxasiateblebi Miwa" sap:VirtualizedContainerService.HintSize="512,56.8" sap2010:WorkflowViewState.IdRef="Sequence_130">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2293,14 +2293,14 @@
                 </If.Else>
               </If>
             </Sequence>
-            <Sequence DisplayName="Bejebi" sap:VirtualizedContainerService.HintSize="512,108" sap2010:WorkflowViewState.IdRef="Sequence_129">
+            <Sequence DisplayName="Bejebi" sap:VirtualizedContainerService.HintSize="512,1258.4" sap2010:WorkflowViewState.IdRef="Sequence_129">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[BejebiArg.Contains(ShesadzlebeliaGakopa)]" DisplayName="If ShesadzlebeliaGakofa" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_46">
+              <If Condition="[BejebiArg.Contains(ShesadzlebeliaGakopa)]" DisplayName="If ShesadzlebeliaGakofa" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_46">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2347,7 +2347,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(Sainvesticio)]" DisplayName="If Sainvesticio" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_47">
+              <If Condition="[BejebiArg.Contains(Sainvesticio)]" DisplayName="If Sainvesticio" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_47">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2379,15 +2379,15 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(DamtkicebuliProeqtit)]" DisplayName="If DamtkProeqtit" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_60">
+              <If Condition="[BejebiArg.Contains(DamtkicebuliProeqtit)]" DisplayName="If DamtkProeqtit" sap:VirtualizedContainerService.HintSize="449.6,752.8" sap2010:WorkflowViewState.IdRef="If_60">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,459.2" sap2010:WorkflowViewState.IdRef="Sequence_160">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,326.4" sap2010:WorkflowViewState.IdRef="Sequence_160">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2398,11 +2398,28 @@
                         <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" CVScreenId="1ec64a23-8037-4158-95e6-e5536f3c9334" DesignTimeRectangle="860, 600, 224, 45" DesignTimeScaleFactor="0.9375" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl innertext='დამტკიცებული პროექტით' parentclass='luk-flex luk-w-full luk-flex-wrap luk-gap-3' idx='1' /&gt;" Guid="30d6d440-6516-4538-82f4-ec8f2cd7211a" InformativeScreenshot="48482524c75170c77a7c3baaca6396a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Checkbox'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_74" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*1yf668v*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_95XZDEWDK1*MTc0MTg5Mzk5Ny41NS4xLjE3NDE4OTc0MDguNjAuMC4w*_ga_R5Q4Z312FE*MTc0MTg5Mzk5OC43OC4xLjE3NDE4OTc0MTIuNTYuMS4xMzE4NDE0Mjgz" CVScreenId="3ca14d77-2818-4c52-a062-4e6a0db65c24" DesignTimeRectangle="935, 705, 224, 45" DesignTimeScaleFactor="0.9375" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl innertext='დამტკიცებული პროექტით' parentclass='luk-flex luk-w-full luk-flex-wrap luk-gap-3' idx='2' /&gt;" Guid="19374fab-0c65-41af-a15f-f918d38e9944" InformativeScreenshot="d4eff655b44410631d64d0646c31b79d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                      </uix:NClick.Target>
-                    </uix:NClick>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,269.6" sap2010:WorkflowViewState.IdRef="Sequence_182">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Checkbox'" sap:VirtualizedContainerService.HintSize="353.6,180.8" sap2010:WorkflowViewState.IdRef="NClick_74" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://statements.myhome.ge/ka/statement/create?referrer=myhome&amp;_gl=1*1yf668v*_ga*MTkwMDY0NjYzLjE3MjcwNzczODM.*_ga_95XZDEWDK1*MTc0MTg5Mzk5Ny41NS4xLjE3NDE4OTc0MDguNjAuMC4w*_ga_R5Q4Z312FE*MTc0MTg5Mzk5OC43OC4xLjE3NDE4OTc0MTIuNTYuMS4xMzE4NDE0Mjgz" CVScreenId="3ca14d77-2818-4c52-a062-4e6a0db65c24" DesignTimeRectangle="935, 705, 224, 45" DesignTimeScaleFactor="0.9375" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl innertext='დამტკიცებული პროექტით' parentclass='luk-flex luk-w-full luk-flex-wrap luk-gap-3' idx='2' /&gt;" Guid="19374fab-0c65-41af-a15f-f918d38e9944" InformativeScreenshot="d4eff655b44410631d64d0646c31b79d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:CommentOut>
                   </Sequence>
                 </If.Then>
                 <If.Else>
@@ -2416,7 +2433,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(KariKodit)]" DisplayName="If KariKodit" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_61">
+              <If Condition="[BejebiArg.Contains(KariKodit)]" DisplayName="If KariKodit" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_61">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2448,7 +2465,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(Airbnb)]" DisplayName="If Airbnb" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_62">
+              <If Condition="[BejebiArg.Contains(Airbnb)]" DisplayName="If Airbnb" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_62">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2480,7 +2497,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(SSMP)]" DisplayName="If SSMP" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_63">
+              <If Condition="[BejebiArg.Contains(SSMP)]" DisplayName="If SSMP" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_63">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2512,7 +2529,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(Wveulebistvis)]" DisplayName="If Wveulebistvis" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="If_64">
+              <If Condition="[BejebiArg.Contains(Wveulebistvis)]" DisplayName="If Wveulebistvis" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="If_64">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2544,7 +2561,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <If Condition="[BejebiArg.Contains(Cxoveli)]" DisplayName="If Cxoveli" sap:VirtualizedContainerService.HintSize="387.2,49.6" sap2010:WorkflowViewState.IdRef="If_65">
+              <If Condition="[BejebiArg.Contains(Cxoveli)]" DisplayName="If Cxoveli" sap:VirtualizedContainerService.HintSize="449.6,49.6" sap2010:WorkflowViewState.IdRef="If_65">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
