@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,1266.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,1268</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>MH_ToDraft_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,19 +111,19 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MH_ToDraft" sap:VirtualizedContainerService.HintSize="595.2,1201.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MH_ToDraft" sap:VirtualizedContainerService.HintSize="595.2,1203.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.g" sap:VirtualizedContainerService.HintSize="532.8,1112.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.g" sap:VirtualizedContainerService.HintSize="532.8,1114.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,872.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,874.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -137,7 +137,7 @@
                 <InArgument x:TypeArguments="x:String">MH</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Checkbox'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Checkbox'" sap:VirtualizedContainerService.HintSize="433.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.myhome.ge/user-profile/my-statements/" CVScreenId="d40bc4f2-99be-46d9-b02e-84d144b95687" DesignTimeRectangle="701, 747, 17, 17" DesignTimeScaleFactor="0.8333333730697632" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl parentclass='flex items-center' idx='3' /&gt;" Guid="e6ca17d6-b47d-4a5c-aef6-c5a0337d6b44" InformativeScreenshot="805c45fc9a4cfbfe0f723a462af5fbe8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი საქართველოში, ბინები, ყიდვა გაყიდვა გაქირავება - MyHome.ge' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
