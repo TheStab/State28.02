@@ -11,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1112.8,1468.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1112.8,1468.0000000000002</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>United_LocAndImages_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -121,13 +121,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="United_LocAndImages" sap:VirtualizedContainerService.HintSize="608,1404" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="United_LocAndImages" sap:VirtualizedContainerService.HintSize="608,1403.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="545.6,112.8" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Boolean">[ShouldContinueArg]</OutArgument>
       </Assign.To>
@@ -343,7 +343,7 @@
               </ui:CommentOut>
               <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+ატვირთე ან ჩააგდეშეგიძ…'" sap:VirtualizedContainerService.HintSize="387.2,84.8" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0efacaeb-1929-4b04-8b39-219240e50fe9" Version="V4">
                 <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="575, 461, 1058, 300" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl innertext='+ატვირთე ან ჩააგდეშეგიძლიათ ატვირთოთ მაქსიმუმ 12 ფოტო მინიმალური რეზოლუცია 300x500 (PNG,JPG,JPEG)' parentclass='document-uploader relative w-full' /&gt;" Guid="b9c6b8db-4812-47df-afc3-366c7dc71b56" InformativeScreenshot="14239a921f1d1054febf794b5ba26a0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  <uix:TargetAnchorable BrowserURL="https://statements.tnet.ge/ka/statement/create?referrer=myhome" DesignTimeRectangle="575, 430, 1058, 300" DesignTimeScaleFactor="0.9375" ElementType="Text" FullSelectorArgument="&lt;webctrl innertext='*ატვირთე*' parentclass='document-uploader relative w-full' /&gt;" Guid="b9c6b8db-4812-47df-afc3-366c7dc71b56" ImageBase64="" InformativeScreenshot="7cae60dfff94cf96883c0e086c943cf9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='უძრავი ქონების პორტალი' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                 </uix:NClick.Target>
                 <uix:NClick.VerifyOptions>
                   <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
